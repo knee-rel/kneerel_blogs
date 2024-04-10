@@ -18,13 +18,13 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.pink.700"),
+            color: theme("colors.gray.700"),
             a: {
-              color: theme("colors.pink.500"),
+              color: theme("colors.blue.500"),
               "&:hover": {
-                color: theme("colors.pink.700"),
+                color: theme("colors.blue.700"),
               },
-              code: { color: theme("colors.pink.400") },
+              code: { color: theme("colors.blue.400") },
             },
             "h2,h3,h4": {
               "scroll-margin-top": spacing[32],
@@ -36,59 +36,45 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme("colors.pink.300"),
+            color: theme("colors.gray.300"),
             a: {
-              color: theme("colors.pink.400"),
+              color: theme("colors.blue.400"),
               "&:hover": {
-                color: theme("colors.pink.600"),
+                color: theme("colors.blue.600"),
               },
-              code: { color: theme("colors.pink.400") },
+              code: { color: theme("colors.blue.400") },
             },
             blockquote: {
-              borderLeftColor: theme("colors.pink.700"),
-              color: theme("colors.pink.300"),
+              borderLeftColor: theme("colors.gray.700"),
+              color: theme("colors.gray.300"),
             },
             "h2,h3,h4": {
-              color: theme("colors.pink.100"),
+              color: theme("colors.gray.100"),
               "scroll-margin-top": spacing[32],
             },
-            hr: { borderColor: theme("colors.pink.700") },
+            hr: { borderColor: theme("colors.gray.700") },
             ol: {
               li: {
-                "&:before": { color: theme("colors.pink.500") },
+                "&:before": { color: theme("colors.gray.500") },
               },
             },
             ul: {
               li: {
-                "&:before": { backgroundColor: theme("colors.pink.500") },
+                "&:before": { backgroundColor: theme("colors.gray.500") },
               },
             },
-            strong: { color: theme("colors.pink.300") },
+            strong: { color: theme("colors.gray.300") },
             thead: {
-              color: theme("colors.pink.100"),
+              color: theme("colors.gray.100"),
             },
             tbody: {
               tr: {
-                borderBottomColor: theme("colors.pink.700"),
+                borderBottomColor: theme("colors.gray.700"),
               },
             },
           },
         },
       }),
-      colors: {
-        pink: {
-          50: "#fdf2f8",
-          100: "#fce8f3",
-          200: "#fad1e8",
-          300: "#f8a3c1",
-          400: "#f668a2",
-          500: "#ec407a",
-          600: "#d81b60",
-          700: "#c2185b",
-          800: "#ad1457",
-          900: "#880e4f",
-        },
-      },
     },
   },
   variants: {
