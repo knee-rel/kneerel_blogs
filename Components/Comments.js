@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { checkAuth } from "../Lib/CheckAuth";
 import Alert from "./Alert";
 import {
@@ -149,7 +150,7 @@ function Comments({ id }) {
               <div className="space-y-4 py-3" key={comment.id}>
                 <div className="flex">
                   <div className="flex-shrink-0 mr-1.5 md:mr-3">
-                    <img
+                    <Image
                       className="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10"
                       src={comment.userImage}
                       alt={comment.userName}

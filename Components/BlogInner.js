@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
 import { BsThreeDots } from "react-icons/bs";
 import Toc from "./Toc";
@@ -6,7 +7,7 @@ function BlogInner({ data, content, headings }) {
   return (
     <div className="mx-auto flex justify-center max-w-screen-xl px-6">
       <div className="rounded-lg shadow-lg bg-white dark:bg-gray-900 pb-8">
-        <img
+        <Image
           className="object-cover w-full h-72"
           src={data.HeaderImage}
           alt="Article Image"
